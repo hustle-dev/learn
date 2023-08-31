@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Noto_Sans_KR } from 'next/font/google'
+import Header from './Header'
 
 export const metadata: Metadata = {
   title: 'Next.js Awesome Memo App',
@@ -16,7 +17,10 @@ const NotoSansKR = Noto_Sans_KR({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="kr">
-      <body className={NotoSansKR.className}>{children}</body>
+      <body className={NotoSansKR.className}>
+        <Header></Header>
+        {children}
+      </body>
     </html>
   )
 }
