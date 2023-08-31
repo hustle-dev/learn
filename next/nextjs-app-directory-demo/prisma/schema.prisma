@@ -1,0 +1,33 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// 버전 정보 등 메타데이터를 저장하는 테이블
+model Metadata {
+  id    Int    @id @default(autoincrement())
+  key   String @unique 
+  value String
+
+  @@map("metadata")
+}
+
+// 노트를 저장하는 테이블
+model Note {
+  id       Int      @id @default(autoincrement())
+  title    String
+  body     String
+  // 컬럼 명은 snake_case, TypeScript 프로퍼티 명은 camelCase.
+  cretedAt DateTime @default(now()) @map("created_at")
+  updateAt DateTime @default(now()) @map("updated_at")
+
+  // 테이블 명은 notes
+  @@map("notes")
+}
