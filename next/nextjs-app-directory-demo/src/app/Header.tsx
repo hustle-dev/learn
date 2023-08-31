@@ -3,7 +3,7 @@ import 'server-only'
 import Link from 'next/link'
 import { Suspense } from 'react'
 
-import { prisma } from '../../globals/db'
+import { prisma } from '../globals/db'
 import { zVersion } from './type'
 
 const Header: React.FC = () => {
@@ -34,7 +34,7 @@ const Header: React.FC = () => {
           <nav className="hidden md:flex gap-12">
             {/* 3. 각 링크가 가리키는 페이지는 현재 미구현이므로 최상위 페이지로 전환 */}
             <Link
-              href="/"
+              href="/notes"
               className="text-gray-600 hover:text-pink-500 active:text-pink-700 text-lg font-semibold transition duration-100"
             >
               Memo

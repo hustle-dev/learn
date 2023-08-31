@@ -25,8 +25,8 @@ model Note {
   title    String
   body     String
   // 컬럼 명은 snake_case, TypeScript 프로퍼티 명은 camelCase.
-  cretedAt DateTime @default(now()) @map("created_at")
-  updateAt DateTime @default(now()) @map("updated_at")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @map("updated_at")
 
   // 테이블 명은 notes
   @@map("notes")
