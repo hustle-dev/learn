@@ -22,7 +22,7 @@ export default async function Page() {
     <main className="mx-2 sm:mx-4 relative">
       {/* 노트 작성 페이지는 아직 없으므로 목록 페이지로 전환 */}
       <Link
-        href="/notes"
+        href="/notes/new"
         className="absolute top-0 right-2 z-10 text-white bg-pink-500 hover:bg-pink-700 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2"
       >
         <svg
