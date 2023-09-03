@@ -10,3 +10,7 @@ Learn new skills
 ### Backend
 
 - [Nest](https://github.com/hustle-dev/learn/tree/main/nest)
+
+### Database
+
+- [Supabase](https://github.com/hustle-dev/learn/tree/main/supabase)
