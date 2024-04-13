@@ -1,5 +1,8 @@
 # learn
-Learn new skills
+
+## Languages
+
+- [Rust](https://github.com/hustle-dev/learn/tree/main/rust)
 
 ## Skills
 
