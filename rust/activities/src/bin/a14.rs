@@ -37,7 +37,7 @@ fn main() {
             age: 65,
             name: String::from("CCC"),
             favorite_color: String::from("Purple"),
-        }
+        },
     ];
 
     for person in people {
